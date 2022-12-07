@@ -1,0 +1,102 @@
+@use '../../Styles/Colors'
+.HeaderNavbar
+    color: white
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 150px
+    width: 100%
+    border-bottom: 2px solid Colors.$background-color-secondary
+
+.HeaderTitle
+    width: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 1rem
+    img
+        margin-left: 3rem
+        &:hover
+            filter: drop-shadow(0 0 5px Colors.$red)
+            cursor: pointer
+
+
+.HeaderTabs
+    display: flex
+    flex: 1
+    ul
+        display: flex
+        flex: 1
+        list-style: none
+        justify-content: space-around
+        flex-direction: row
+        li
+            margin: 0 3rem
+            font-size: 1.5rem
+            cursor: pointer
+
+
+.HeaderTools
+    display: flex
+    flex: 1
+    align-items: center
+    justify-content: space-around
+
+
+.searchBar
+    display: flex
+    background-color: Colors.$background-color-secondary
+    width: 400px
+    height: 60px
+    border-radius: 10px
+    overflow: hidden
+    span
+        width: 80px
+        height: 100%
+        display: flex
+        font-size: 2rem
+        align-items: center
+        color: Colors.$neutral-300
+        justify-content: center
+    input
+        flex: 1
+        border: none
+        background-color: Colors.$background-color-secondary
+        color: Colors.$neutral-300
+        padding: 0 0.4rem
+        font-size: 1.3rem
+        &:focus
+            border: none
+            outline: none
+        &::placeholder
+            color: Colors.$neutral-300
+
+
+.notify-icon
+    height: 60px
+    width: 60px
+    background-color: Colors.$background-color-secondary
+    color: Colors.$neutral-300
+    font-size: 2rem
+    border-radius: 10px
+    border: none
+    cursor: pointer
+
+.user-box
+    display: flex
+    height: 70px
+    overflow: hidden
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    width: 110px
+    padding: 0 10px
+    background-color: Colors.$background-color-secondary
+    border-radius: 10px
+    span
+        font-weight: bold
+        font-size: 1.5rem
+    img
+        height: 85%
+        border-radius: 8px
+        margin-right: 10px

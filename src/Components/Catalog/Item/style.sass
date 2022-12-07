@@ -1,0 +1,44 @@
+@use '../../../Styles/Colors'
+
+.Item
+    display: flex
+    width: 90%
+    overflow: hidden
+    align-items: center
+    height: 120px
+    border-radius: 20px
+    background-color: Colors.$background-color-secondary
+    padding: 0.3rem
+    margin: 3rem 0
+
+
+    img
+        height: 95%
+        border-radius: 10px
+
+.ItemInfo
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    margin-left: 15px
+
+    h3
+        color: Colors.$neutral-100
+        width: 100%
+        margin: 0.5rem 0
+
+    .year
+        width: 100%
+        color: Colors.$neutral-300
+        margin: 0.5rem 0
+        
+    .stars
+        display: flex
+        align-items: center
+        width: 100%
+        color: Colors.$neutral-100
+        margin: 0.5rem 0
+        color: Colors.$orange
+        span
+            margin-left: 0.5rem
+            color: white
